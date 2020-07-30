@@ -14,9 +14,7 @@ class App extends React.Component{
     this.search = this.search.bind(this);
   }
   componentDidMount(){
-    var url = window.location.href;
-    console.log(url)
-    axios.get(url+'data')
+    axios.get('https://bitcoin-mini-app.herokuapp.com/data')
       .then((data)=>{
         this.setState({
           dates:Object.keys(data.data),
@@ -29,8 +27,7 @@ class App extends React.Component{
   }
 
   search(dates){
-    var url = window.location.href;
-    axios.get(url+`data/:${dates.startDate}&${dates.endDate}`)
+    axios.get(`https://bitcoin-mini-app.herokuapp.com/data/:${dates.startDate}&${dates.endDate}`)
     .then((data)=>{
       this.setState({
         dates:Object.keys(data.data),
