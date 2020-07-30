@@ -15,6 +15,7 @@ class App extends React.Component{
   }
   componentDidMount(){
     var url = window.location.href;
+    console.log(url)
     axios.get(url+'data')
       .then((data)=>{
         this.setState({
