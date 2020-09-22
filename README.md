@@ -1,7 +1,6 @@
 # Bitcoin App
 Bitcoin App is a platform to check the price of bitcoin at any desired point in time. This application is powered by CoinDesk. The price of bitcoin are displayed on a graph created by react-charsjs-2.
 
-Application is now deployed on Heroku and can be visited at: https://bitcoin-mini-app.herokuapp.com/
 
 
 ## Table of Contents
